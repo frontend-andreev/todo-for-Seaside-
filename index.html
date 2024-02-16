@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <aside class="sidebar">
+                <div class="sidebar__content">
+                    <div class="sidebar__logo">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="sidebar__item">
+                        <p class="sidebar__parameter">
+                            Tasks
+                        </p>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__checklist sidebar__checklist_active">
+                                <p class="sidebar__name">
+                                    Today
+                                </p>
+                                <p class="sidebar__count">
+                                    2
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar__item">
+                        <p class="sidebar__parameter">
+                            Lists
+                        </p>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__checklist sidebar__checklist_active">
+                                <p class="sidebar__name">
+                                    Daily Routine
+                                </p>
+                                <p class="sidebar__count">
+                                    2
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <div class="view">
+                <div class="container">
+                    <h3 class="view__title">
+                        Today
+                    </h3>
+                    <div class="view__nav">
+                        <button class="view__filter view__filter_active" id="#allFilter">
+                            All
+                        </button>
+                        <button class="view__filter" id="activeFilter">
+                            Active
+                        </button>
+                        <button class="view__filter" id="completedFilter">
+                            Completed
+                        </button>
+                    </div>
+                    <ul class="view__list">
+                        <!--  -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <button class="main-button">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg class="main-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12H20M12 4V20" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="modal">
+            <div class="modal__container">
+                <div class="modal__content">
+                    <h3 class="modal__title">New Task</h3>
+                    <form action="#" class="modal__form">
+                        <div class="modal__frames">
+                            <input type="text" id="nameOfNewTask" class="modal__input" placeholder="Name your new task">
+                            <input type="text" id="descriptionOfNewTask" class="modal__input" placeholder="Describe your new task">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
